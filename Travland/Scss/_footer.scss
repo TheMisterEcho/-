@@ -1,0 +1,140 @@
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(38, 148, 153, 0.06);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding-left: 18%;
+    padding-right: 18%;
+
+    column-gap: 50px;
+
+    padding-top: 80px;
+
+    &__contact {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        &--h3 {
+            font-family: "Ribeye";
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 1px;
+
+            margin-bottom: 30px;
+        }
+
+        &--p {
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 16px;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        &--SVGs {
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 20px;
+        }
+
+    }
+
+    &__hrefs {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &--a {
+            font-family: "Roboto";
+            font-weight: 500;
+            font-size: 16px;
+
+            color: rgb(46, 46, 46);
+
+            text-decoration: none;
+
+            &:hover {
+                transition: all 0.4s ease;
+                transform: scale(1.1);
+            }
+
+            &:active {
+                transition: all 0.1s ease;
+                color: black;
+            }
+        }
+
+
+    }
+
+    &__subscribe {
+
+        width: 320px;
+        height: 200px;
+        justify-content: space-between;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &--p {
+            margin-bottom: 10px;
+        }
+
+        &--label {
+            font-family: "Roboto";
+            font-size: 22.5px;
+            font-weight: 500;
+        }
+
+        &--form {
+            width: 320px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--input {
+            width: 200px;
+            height: 40px;
+
+            padding-left: 15px;
+
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        &--send {
+            width: 90px;
+            height: 38px;
+
+            background-color: rgba(201, 69, 59, 1);
+
+            border: none;
+            border-radius: 5px;
+
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+
+            &:hover {
+                transition: all 0.4s ease;
+                background-color: rgb(163, 48, 40);
+            }
+
+            &:active {
+                transition: all 0.1s ease;
+                background-color: rgb(63, 9, 5);
+            }
+        }
+    }
+}
